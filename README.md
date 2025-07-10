@@ -36,7 +36,7 @@ Optuna-Fly/
 
 First, clone this repository to your local machine:
 ```bash
-git clone [https://github.com/bakethi/Optuna-Fly.git](https://github.com/bakethi/Optuna-Fly.git)
+git clone https://github.com/bakethi/Optuna-Fly.git
 cd Optuna-Fly
 ```
 
