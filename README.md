@@ -91,9 +91,7 @@ If you want to evaluate a single, specific agent (e.g., a baseline model or a sp
 2.  **Run the script from the command line**, providing the path to the model and a path for the output CSV log.
 
 ```bash
-python scripts/evaluate_intruder_for_optuna.py \
-    --model_path path/to/your/agent.zip \
-    --log_file results/your_model_evaluation.csv
+python python scripts/evaluate_intruder_for_optuna.py --model_path models/baseline_average_params/agent_avg.zip --log_file results/your_model_evaluation.csv
 ```
 
 This will run the full evaluation and save the detailed results to the specified log file, which can then be used for plotting and analysis.
