@@ -64,21 +64,14 @@ After this step, your environment is registered with Gymnasium and can be called
 
 The core of this research is the automated hyperparameter optimization study. The following commands allow you to replicate this process.
 
-### 1. Initialize the Study
-
-This one-time command creates the SQLite database that will store all trial results. This prevents a race condition when running multiple workers in parallel.
-```bash
-optuna create-study --study-name "IntruderAvoidance-PBRS-MultiObjective" --storage "sqlite:///pbrs_tuning.db" --directions "minimize" "minimize"
-```
-
-### 2. Run the Optimization
+### 1. Run the Optimization
 
 To run the full study, execute the manager script. This will begin the process of proposing parameters, training agents, and evaluating them, running for 200 trials as specified in the script.
 ```bash
 python scripts/train_optuna_manager.py
 ```
 
-### 3. Monitor the Study with the Optuna Dashboard
+### 2. Monitor the Study with the Optuna Dashboard
 
 While the main study is running (or after it has finished), open a **new terminal window**, activate the virtual environment, and run the following command to launch the web-based dashboard:
 ```bash
